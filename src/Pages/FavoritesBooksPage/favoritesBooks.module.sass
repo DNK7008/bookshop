@@ -1,0 +1,23 @@
+@import '../../Assets/styles/mixins.sass'
+
+.favWrapper
+    .back
+        margin-bottom: 40px
+        cursor: pointer
+
+    .favBooks 
+        margin-bottom: 70px
+        .favCard
+            margin-bottom: 50px
+            &:last-child    
+                margin-bottom: 0
+    .noFavsMessage
+        +interRegular(16px, $primary)
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 150px
+.popularBooks 
+ margin-bottom: 110px
+ .popularBooksTitle
+  margin-bottom: 50px

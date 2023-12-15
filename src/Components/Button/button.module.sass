@@ -1,0 +1,31 @@
+@import '../../Assets/styles/mixins.sass'
+
+.button 
+  outline: none
+  width: 100%
+  height: 56px
+  padding: 14px 0 18px
+  cursor: pointer
+  transition: 0.3s
+  white-space: nowrap
+  text-align: center
+  letter-spacing: 0.05em
+ 
+.black
+  border: none
+  background-color: $primary
+  +BebasNeueH3(24px, $white)
+  &:hover
+    background-color: $primary-light
+
+.white
+  border: 1px solid #E7E7E7
+  background-color: $white
+  +BebasNeueH3(24px, $primary)
+  &:hover
+    background-color: rgba(168, 168, 168, 0.5)
+
+.disabled
+  background-color: $secondary
+  &:hover
+    background-color: $secondary
